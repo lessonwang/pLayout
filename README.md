@@ -52,3 +52,6 @@
 # Polynomial
 ---
 ![Polynomial](../master/examples/polynomial.PNG)
+# Elementary Addition
+---
+![Elementary Addition](../master/examples/elementary_addition.PNG)
