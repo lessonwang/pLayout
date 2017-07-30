@@ -1,5 +1,16 @@
 def cycleIntegralSign(height):
-  pass
+  try:
+    height = int(height)
+    if height == 1:
+      return "\n".join(["   --","  /  "," (\u00a6) ","  /  ","--   "])
+    elif height > 1:
+      height = height if height % 2 else (height + 1)
+      tmp = height // 2
+      return "\n".join(["   --","  /  ",("  \u00a6  \n"*tmp)[:-1]," (\u00a6) ",("  \u00a6  \n"*tmp)[:-1],"  /  ","--   "])
+    else:
+      return "\n".join(["   --","  /  ",("  \u00a6  \n"*2)[:-1]," (\u00a6) ",("  \u00a6  \n"*2)[:-1],"  /  ","--   "])
+  except:
+    return "\n".join(["   --","  /  ",("  \u00a6  \n"*2)[:-1]," (\u00a6) ",("  \u00a6  \n"*2)[:-1],"  /  ","--   "])
 
 def dimension(string):
 	try:
@@ -145,8 +156,14 @@ def justify(string,align="center",chrs=" "):
 	except:
 		return string
 
-def productSign(width,height):
-  pass
+def productSign(height):
+  try:
+    height = int(height)
+    height = height if height >=5 else 5
+    tmp = height if height % 2 else (height + 1)
+    return "\n".join(["_"*tmp,((" \u00a6"+" "*(tmp-4)+"\u00a6 \n")*(tmp//2))[:-1]])
+  except:
+    return "\n".join(["_"*5,(" \u00a6 \u00a6 \n"*2)[:-1]])
 
 def sqrt(inner):
   try:
@@ -221,8 +238,25 @@ def subsup(base,subscript,superscript,bshift=0,pshift=0):
   except:
     print("Can't generate subscript and superscript simultaneously.")
 
-def summaSign(width,height):
-  pass
+def summaSign(height):
+  try:
+    height = int(height)
+    height = height if height >=6 else 6
+    height = (height + 1) if height % 2 else height
+    width = (height - 2) // 2 + 2
+    res = []
+    res.append("-"*width)
+    res.append("\\"+" "*(width - 1))
+    tmp = (height - 4) // 2
+    for i in range(1,tmp + 1):
+      res.append("".join([" "*i,"\\"," "*(width - i - 1)]))
+    for i in range(tmp,0,-1):
+      res.append("".join([" "*i,"/"," "*(width - i - 1)]))
+    res.append("/"+" "*(width - 1))
+    res.append("-"*width)
+    return "\n".join(res)
+  except:
+    return "\n".join(["-"*4,"\\   "," \\  "," /  ","/   ","-"*4])
 
 def sup(base,superscript,shift=0):
   try:
