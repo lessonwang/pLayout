@@ -16,3 +16,30 @@
 # Nth Root
 ---
 ![Nth Root](../master/examples/nth_root.PNG)
+# Continued Fractions
+---
+![Continued Fractions](../master/examples/continued_fractions.PNG)
+# Superscript
+---
+![Superscript](../master/examples/superscript.PNG)
+# Matrix
+---
+![Matrix](../master/examples/matrix.PNG)
+# Subscript
+---
+![Subscript](../master/examples/subscript.PNG)
+# Equation Group
+---
+![Equation Group](../master/examples/equation_group.PNG)
+# Integral
+---
+![Integral](../master/examples/integral.PNG)
+# Line Integral
+---
+![Line Integral](../master/examples/line_integral.PNG)
+# Continued Product
+---
+![Continued Product](../master/examples/continued_product.PNG)
+# Summation
+---
+![Summation](../master/examples/summation.PNG)
