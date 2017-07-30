@@ -43,3 +43,12 @@
 # Summation
 ---
 ![Summation](../master/examples/summation.PNG)
+# Nested Radical
+---
+![Nested Radical](../master/examples/nested_radical.PNG)
+# Limit
+---
+![Limit](../master/examples/limit.PNG)
+# Polynomial
+---
+![Polynomial](../master/examples/polynomial.PNG)
