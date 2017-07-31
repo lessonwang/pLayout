@@ -7,8 +7,8 @@ def cycleIntegralSign(height):
             height = height if height % 2 else (height + 1)
             tmp = height // 2
             return "\n".join(["   --","  /  ",("  \u00a6  \n"*tmp)[:-1]," (\u00a6) ",("  \u00a6  \n"*tmp)[:-1],"  /  ","--   "])
-    else:
-        return "\n".join(["   --","  /  ",("  \u00a6  \n"*2)[:-1]," (\u00a6) ",("  \u00a6  \n"*2)[:-1],"  /  ","--   "])
+        else:
+            return "\n".join(["   --","  /  ",("  \u00a6  \n"*2)[:-1]," (\u00a6) ",("  \u00a6  \n"*2)[:-1],"  /  ","--   "])
     except:
         return "\n".join(["   --","  /  ",("  \u00a6  \n"*2)[:-1]," (\u00a6) ",("  \u00a6  \n"*2)[:-1],"  /  ","--   "])
 
