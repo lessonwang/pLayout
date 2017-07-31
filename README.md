@@ -55,3 +55,9 @@
 # Elementary Addition
 ---
 ![Elementary Addition](../master/examples/elementary_addition.PNG)
+# Border
+---
+![Border](../master/examples/border.PNG)
+# Piecewise Function
+---
+![Piecewise Function](../master/examples/piecewise_function.PNG)
